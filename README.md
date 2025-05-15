@@ -81,18 +81,7 @@ const txo = require('bittx');
 
 ## 2. fromHash
 
-The `fromHash` method utilizes Bitcoin's JSON-RPC, therefore you need to have access to a JSON-RPC endpoint.
-
-The first step is to update the `.env` file
-
-```
-BITCOIN_USERNAME=[Bitcoin Node Username]
-BITCOIN_PASSWORD=[Bitcoin Node Password]
-BITCOIN_IP=[Bitcoin Node IP]
-BITCOIN_PORT=[Bitcoin Node Port]
-```
-
-Then, we can generate bittx from transaction hash:
+The `fromHash` method loads a transaction from it's txid
 
 ```
 const txo = require('bittx');
