@@ -1,0 +1,38 @@
+{
+  "name": "bittx",
+  "version": "0.0.4",
+  "description": "Load Bitcoin Transactions",
+  "author": "tomas@bsv.direct",
+  "license": "MIT",
+  "main": "dist/bittx.mjs",
+  "module": "dist/bittx.mjs",
+  "unpkg": "dist/bittx.umd.js",
+  "exports": {
+    ".": {
+      "import": "./dist/bittx.mjs",
+      "require": "./dist/bittx.umd.js"
+    }
+  },
+  "library": "bittx",
+  "files": [
+    "dist/*",
+    "protein.png",
+    "graph.png"
+  ],
+  "scripts": {
+    "clean": "rm -rf dist/**",
+    "build": "npx vite build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/samooth/btx.git"
+  },
+  "dependencies": {
+    "b4a": "^1.6.7",
+    "bsv2": "^2.1.2"
+  },
+  "devDependencies": {
+    "vite": "^6.3.5",
+    "vite-plugin-node-polyfills": "^0.23.0"
+  }
+}
