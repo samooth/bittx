@@ -25,7 +25,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/samooth/btx.git"
+    "url": "https://github.com/samooth/bittx.git"
   },
   "dependencies": {
     "b4a": "^1.6.7",
